@@ -1,0 +1,32 @@
+# { inputs, self, ... }: {
+#
+#   flake.nixosModules.hypr =
+#
+# # ========================================
+#   { config, pkgs, ... }:
+#
+#   {
+#     imports = [
+#       self.nixosModules.apps
+#     ];
+#
+#     programs.hyprland.enable = true;
+#
+#     environment.systemPackages = with pkgs; [
+#
+#       waybar
+#       kitty
+#       awww
+#       hyprpaper
+#       mpvpaper
+#       rofi
+#       swaynotificationcenter
+#       grim # Screenshots.
+#       slurp # Section Screenshots.
+#       wl-clipboard-rs
+#       hyprcursor
+#     ];
+#   };
+#
+# # ========================================
+# }

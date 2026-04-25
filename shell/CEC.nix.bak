@@ -1,0 +1,20 @@
+{ pkgs ? import <nixpkgs> {} }:
+
+pkgs.mkShell {
+
+  packages = [
+  (pkgs.python3.withPackages(p: with p; [
+    pandas
+    numpy
+    seaborn
+    matplotlib
+    pyqt5
+    tkinter
+  ]))
+  ];
+
+  shellHook = ''
+    cd ~/Documents/Academia/dev/Cálculo_Energético_Computacional/ && zsh
+  '';
+
+}
