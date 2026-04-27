@@ -29,6 +29,10 @@
         # Random config ---------------------------------------------------------------------------
         spawn-at-startup = [ noctaliaExe ];
 
+        prefer-no-csd = null;
+
+        screenshot-path = "~/画像/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png";
+
         window-rule.open-maximized = true;
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -94,7 +98,10 @@
           "Mod+U".show-hotkey-overlay = null;
 
           "Mod+Shift+A".switch-layout = "next";
+
           "Mod+S".screenshot = null;
+          "Mod+Shift+S".screenshot-screen = null;
+          "Mod+E".screenshot-window = null;
 
           "Mod+Q".close-window = null;
           "Mod+Shift+M".quit = null;

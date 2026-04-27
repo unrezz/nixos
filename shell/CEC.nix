@@ -12,16 +12,6 @@ in pkgs.mkShell {
     ]))
   ];
 
-  #   (pkgs.python3.withPackages(p: with p; [
-  #   pandas
-  #   numpy
-  #   seaborn
-  #   matplotlib
-  #   pyqt5
-  #   tkinter
-  # ]))
-  # ];
-
   shellHook = ''
     cd ~/ドキュメント/Academia/dev/Cálculo_Energético_Computacional/ && zsh
   '';
